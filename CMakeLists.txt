@@ -139,3 +139,4 @@ endif()
 add_custom_target(uninstall "${CMAKE_COMMAND}" -P "${PROJECT_SOURCE_DIR}/build/cmake/uninstall.cmake")
 
 PRINT_CONFIG_SUMMARY()
+set(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -latomic")
